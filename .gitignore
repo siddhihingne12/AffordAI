@@ -1,0 +1,52 @@
+# Python virtual environment
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Environment variables
+.env
+*.env.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Debug / temp scripts
+debug_*.py
+patch_*.py
+inspect_data.py
+
+# Pytest / coverage
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Node / frontend (dashboard - will be added later)
+frontend/node_modules/
+
+# Large media files
+dataset/media/*.png
+dataset/media/*.jpg
+dataset/media/*.jpeg
+
+# Logs
+*.log
