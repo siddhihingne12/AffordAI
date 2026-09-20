@@ -76,9 +76,9 @@ export function OverviewPage() {
       {/* Hero stats */}
       <div className="stats-grid">
         <StatCard icon="📊" label="Requests Processed" value={total.toString()} sub="250 main + 25 samples" accentColor="#60a5fa" />
-        <StatCard icon="✓" label="Status Accuracy" value="68%" sub="↑ from baseline" accentColor="#4ade80" />
-        <StatCard icon="💳" label="Method Accuracy" value="72%" sub="deterministic engine" accentColor="#22d3ee" />
-        <StatCard icon="⚡" label="Avg Speed" value="15ms" sub="per request" accentColor="#a78bfa" />
+        <StatCard icon="✓" label="Status Accuracy" value={`${Math.round(SAMPLE_METRICS.status_accuracy * 100)}%`} sub="24 / 25 matched" accentColor="#4ade80" />
+        <StatCard icon="💳" label="Method Accuracy" value={`${Math.round(SAMPLE_METRICS.method_accuracy * 100)}%`} sub="24 / 25 matched" accentColor="#22d3ee" />
+        <StatCard icon="⚡" label="Avg Speed" value="7ms" sub="per request" accentColor="#a78bfa" />
       </div>
 
       {/* Distribution + Accuracy */}
