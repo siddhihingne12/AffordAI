@@ -53,5 +53,15 @@ def write_output(
             row = decision.to_csv_row()
             writer.writerow(row)
     
+    # Also save a copy to the root directory for easy submission/inspection
+    root_output = Path("output.csv")
+    try:
+        import shutil
+        if output_path.resolve() != root_output.resolve():
+            shutil.copy(output_path, root_output)
+    except Exception:
+        pass
+    
     print(f"\n[OUT] Output written to {output_path} ({len(decisions)} rows)")
     return output_path
+

@@ -8,8 +8,8 @@ import {
 import {
   SAMPLE_DECISIONS, SAMPLE_METRICS, OUTPUT_DISTRIBUTION,
   METHOD_DISTRIBUTION, STATUS_CONFIG, METHOD_LABELS, formatCurrency, parsePlan,
-} from '../data';
-import { StatusBadge, DecisionCard, MetricBar, StatCard, DonutChart } from '../components/ui';
+} from './data';
+import { StatusBadge, DecisionCard, MetricBar, StatCard, DonutChart } from './components/ui';
 
 // ─────────────────────────────────────────────
 // Generate mock cash-flow forecast data

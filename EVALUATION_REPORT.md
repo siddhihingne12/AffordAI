@@ -1,6 +1,6 @@
 # AFFORDAI — Evaluation Report
 
-*Generated: 2026-09-13 17:57:05*
+*Generated: 2026-09-20 12:03:44*
 
 ## Summary Metrics
 
@@ -13,7 +13,7 @@
 | Earliest Date Accuracy | 20.0% |
 | Spending Changes Accuracy | 84.0% |
 | **Average Weighted Score** | **57.4%** |
-| Average Amount Error | 206.5% |
+| Average Amount Error | 89.0% |
 
 *Evaluated 25 requests against ground truth.*
 
@@ -25,13 +25,13 @@
 | request_02 | 10% | [FAIL] | [FAIL] (24%) | [FAIL] | [FAIL] | [FAIL] (±999d) | [OK] |
 | request_03 | 80% | [OK] | [FAIL] (33%) | [OK] | [OK] | [OK] | [OK] |
 | request_04 | 10% | [FAIL] | [FAIL] (51%) | [FAIL] | [FAIL] | [FAIL] (±11d) | [OK] |
-| request_05 | 70% | [OK] | [FAIL] (2001%) | [OK] | [OK] | [FAIL] (±999d) | [OK] |
+| request_05 | 70% | [OK] | [FAIL] (100%) | [OK] | [OK] | [FAIL] (±999d) | [OK] |
 | request_06 | 55% | [FAIL] | [OK] | [OK] | [OK] | [FAIL] (±12d) | [FAIL] |
 | request_07 | 70% | [OK] | [FAIL] (10%) | [OK] | [OK] | [FAIL] (±15d) | [OK] |
-| request_08 | 10% | [FAIL] | [FAIL] (83%) | [FAIL] | [FAIL] | [FAIL] (±999d) | [OK] |
+| request_08 | 10% | [FAIL] | [FAIL] (100%) | [FAIL] | [FAIL] | [FAIL] (±999d) | [OK] |
 | request_09 | 100% | [OK] | [OK] | [OK] | [OK] | [OK] | [OK] |
-| request_10 | 70% | [OK] | [FAIL] (2000%) | [OK] | [OK] | [FAIL] (±999d) | [OK] |
-| request_11 | 0% | [FAIL] | [FAIL] (49%) | [FAIL] | [FAIL] | [FAIL] (±999d) | [FAIL] |
+| request_10 | 70% | [OK] | [FAIL] (896%) | [OK] | [OK] | [FAIL] (±999d) | [OK] |
+| request_11 | 0% | [FAIL] | [FAIL] (100%) | [FAIL] | [FAIL] | [FAIL] (±999d) | [FAIL] |
 | request_12 | 90% | [OK] | [OK] | [OK] | [OK] | [FAIL] (±76d) | [OK] |
 | request_13 | 0% | [FAIL] | [FAIL] (117%) | [FAIL] | [FAIL] | [FAIL] (±69d) | [FAIL] |
 | request_14 | 70% | [OK] | [FAIL] (30%) | [OK] | [OK] | [FAIL] (±999d) | [OK] |
@@ -52,7 +52,7 @@
 ### request_11 (score: 0%)
 
 - **Status**: predicted `not_affordable`, expected `affordable_with_plan`
-- **Amount**: predicted `6436793.21`, expected `12510645.00` (error: 48.5%)
+- **Amount**: predicted `0.00`, expected `12510645.00` (error: 100.0%)
 - **Method**: predicted `not_recommended`, expected `full_payment`
 - **Plan**: {'mismatch': 'one is none'}
 - **Date**: off by 999 days
@@ -86,7 +86,7 @@
 ### request_08 (score: 10%)
 
 - **Status**: predicted `not_affordable`, expected `affordable_later`
-- **Amount**: predicted `521.57`, expected `284.57` (error: 83.3%)
+- **Amount**: predicted `0.00`, expected `284.57` (error: 100.0%)
 - **Method**: predicted `not_recommended`, expected `wait`
 - **Plan**: {'mismatch': 'one is none'}
 - **Date**: off by 999 days
@@ -120,7 +120,7 @@
 
 ### request_05 (score: 70%)
 
-- **Amount**: predicted `15488.00`, expected `737.00` (error: 2001.5%)
+- **Amount**: predicted `0.00`, expected `737.00` (error: 100.0%)
 - **Date**: off by 999 days
 
 ### request_07 (score: 70%)
@@ -130,7 +130,7 @@
 
 ### request_10 (score: 70%)
 
-- **Amount**: predicted `266700.00`, expected `12700.00` (error: 2000.0%)
+- **Amount**: predicted `126486.79`, expected `12700.00` (error: 896.0%)
 - **Date**: off by 999 days
 
 ### request_14 (score: 70%)
