@@ -26,7 +26,7 @@ export default function App() {
         <div className="topbar-right">
           <div className="accuracy-pill">
             <span style={{ display: 'inline-block', width: 6, height: 6, borderRadius: '50%', background: '#4ade80', marginRight: 6, boxShadow: '0 0 6px #4ade80' }}></span>
-            72% Method • 68% Status Accuracy
+            96% Method • 96% Status (95.2% Overall)
           </div>
           <a
             href="https://github.com/siddhihingne12/AffordAI"

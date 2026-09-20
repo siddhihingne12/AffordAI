@@ -37,15 +37,22 @@ def date_accuracy(predicted_str: str, expected_str: str, tolerance_days: int = 3
     Returns:
         (is_match, days_off)
     """
-    if not predicted_str and not expected_str:
+    p = str(predicted_str).strip() if predicted_str is not None else ""
+    e = str(expected_str).strip() if expected_str is not None else ""
+    if p.lower() in ("nan", "none", "<na>"):
+        p = ""
+    if e.lower() in ("nan", "none", "<na>"):
+        e = ""
+
+    if not p and not e:
         return True, 0
     
-    if not predicted_str or not expected_str:
+    if not p or not e:
         return False, 999
     
     try:
-        pred_date = date.fromisoformat(predicted_str.strip())
-        exp_date = date.fromisoformat(expected_str.strip())
+        pred_date = date.fromisoformat(p)
+        exp_date = date.fromisoformat(e)
         delta = abs((pred_date - exp_date).days)
         return delta <= tolerance_days, delta
     except (ValueError, TypeError):
