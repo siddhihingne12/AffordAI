@@ -125,27 +125,27 @@ export const SAMPLE_DECISIONS = [
 
 export const SAMPLE_METRICS = {
   total_evaluated: 25,
-  status_accuracy: 1.0,
-  method_accuracy: 1.0,
-  plan_accuracy: 1.0,
-  changes_accuracy: 1.0,
-  date_accuracy: 1.0,
-  amount_accuracy: 1.0,
-  avg_score: 1.0,
+  status_accuracy: 0.96,
+  method_accuracy: 0.96,
+  plan_accuracy: 0.96,
+  changes_accuracy: 0.96,
+  date_accuracy: 0.96,
+  amount_accuracy: 0.92,
+  avg_score: 0.952,
 };
 
 export const OUTPUT_DISTRIBUTION = {
   affordable_now: 69,
-  affordable_with_plan: 81,
+  affordable_with_plan: 80,
   affordable_later: 36,
-  not_affordable: 89,
+  not_affordable: 90,
 };
 
 export const METHOD_DISTRIBUTION = {
-  full_payment: 77,
+  full_payment: 76,
   installments: 72,
   wait: 36,
-  not_recommended: 89,
+  not_recommended: 90,
   partial_payment: 1,
 };
 

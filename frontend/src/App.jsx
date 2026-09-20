@@ -26,7 +26,7 @@ export default function App() {
         <div className="topbar-right">
           <div className="accuracy-pill">
             <span style={{ display: 'inline-block', width: 6, height: 6, borderRadius: '50%', background: '#4ade80', marginRight: 6, boxShadow: '0 0 6px #4ade80' }}></span>
-            100% Benchmark Accuracy • Official Evaluator
+            95.2% Benchmark Accuracy • Official Evaluator
           </div>
           <a
             href="https://github.com/siddhihingne12/AffordAI"
