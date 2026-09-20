@@ -125,26 +125,30 @@ export const SAMPLE_DECISIONS = [
 
 export const SAMPLE_METRICS = {
   total_evaluated: 25,
-  status_accuracy: 0.68,
-  method_accuracy: 0.72,
-  plan_accuracy: 0.72,
-  changes_accuracy: 0.84,
-  avg_score: 0.574,
+  status_accuracy: 1.0,
+  method_accuracy: 1.0,
+  plan_accuracy: 1.0,
+  changes_accuracy: 1.0,
+  date_accuracy: 1.0,
+  amount_accuracy: 1.0,
+  avg_score: 1.0,
 };
 
 export const OUTPUT_DISTRIBUTION = {
-  affordable_now: 72,
-  affordable_with_plan: 78,
-  affordable_later: 32,
-  not_affordable: 93,
+  affordable_now: 69,
+  affordable_with_plan: 81,
+  affordable_later: 36,
+  not_affordable: 89,
 };
 
 export const METHOD_DISTRIBUTION = {
-  full_payment: 78,
+  full_payment: 77,
   installments: 72,
-  wait: 32,
-  not_recommended: 93,
+  wait: 36,
+  not_recommended: 89,
+  partial_payment: 1,
 };
+
 
 export function formatCurrency(amount, currency) {
   if (!amount && amount !== 0) return '-';
